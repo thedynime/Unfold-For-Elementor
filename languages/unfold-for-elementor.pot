@@ -19,7 +19,7 @@ msgid "Unfold for Elementor"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://dynime.com"
+msgid "https://github.com/thedynime/Unfold-For-Elementor"
 msgstr ""
 
 #. Description of the plugin
@@ -31,7 +31,7 @@ msgid "Dynime LLC"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://dynime.com"
+msgid "https://github.com/thedynime/Unfold-For-Elementor"
 msgstr ""
 
 #: includes/class-plugin.php:97

@@ -1,5 +1,5 @@
 === Unfold for Elementor ===
-Contributors: dynime, jitkumarsaha
+Contributors: thedynime, dynime, jitkumarsaha
 Donate link: https://dynime.com
 Tags: elementor, show more, show less, content toggle, read more, accordion, expand collapse, unfold
 Requires at least: 5.8

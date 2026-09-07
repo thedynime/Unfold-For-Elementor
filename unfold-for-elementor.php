@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Unfold for Elementor
- * Plugin URI:        https://dynime.com
+ * Plugin URI:        https://github.com/thedynime/Unfold-For-Elementor
  * Description:       A flexible Show More and Show Less solution for Elementor that lets you make widgets, containers, sections, and nested Elementor content expandable and collapsible directly from the Advanced tab.
  * Version:           1.0.0
  * Requires at least: 5.8
