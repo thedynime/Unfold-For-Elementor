@@ -1,0 +1,446 @@
+# Copyright (C) 2026 Dynime LLC
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Unfold for Elementor 1.0.0\n"
+"Report-Msgid-Bugs-To: https://dynime.com\n"
+"Last-Translator: Dynime LLC <support@dynime.com>\n"
+"Language-Team: English <support@dynime.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-07T13:30:00+00:00\n"
+"PO-Revision-Date: 2026-09-07T13:30:00+00:00\n"
+"X-Generator: WP-CLI\n"
+"X-Domain: unfold-for-elementor\n"
+
+#. Plugin Name of the plugin
+msgid "Unfold for Elementor"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://dynime.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "A flexible Show More and Show Less solution for Elementor that lets you make widgets, containers, sections, and nested Elementor content expandable and collapsible directly from the Advanced tab."
+msgstr ""
+
+#. Author of the plugin
+msgid "Dynime LLC"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://dynime.com"
+msgstr ""
+
+#: includes/class-plugin.php:97
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: includes/class-plugin.php:98
+msgid "Unfold for Elementor"
+msgstr ""
+
+#: includes/class-plugin.php:99
+msgid "Elementor"
+msgstr ""
+
+#: includes/class-plugin.php:114
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: includes/class-plugin.php:131
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: includes/class-controls.php:67
+msgid "Unfold"
+msgstr ""
+
+#: includes/class-controls.php:75
+msgid "Enable Unfold"
+msgstr ""
+
+#: includes/class-controls.php:78
+msgid "Yes"
+msgstr ""
+
+#: includes/class-controls.php:79
+msgid "No"
+msgstr ""
+
+#: includes/class-controls.php:82
+msgid "Make this entire element/container expandable and collapsible."
+msgstr ""
+
+#: includes/class-controls.php:90
+msgid "Fold Mode"
+msgstr ""
+
+#: includes/class-controls.php:93
+msgid "Fixed / Collapsed Height"
+msgstr ""
+
+#: includes/class-controls.php:94
+msgid "Content Preview Percentage"
+msgstr ""
+
+#: includes/class-controls.php:104
+msgid "Collapsed Height"
+msgstr ""
+
+#: includes/class-controls.php:126
+msgid "Set to 0px to completely hide the folded content initially until expanded."
+msgstr ""
+
+#: includes/class-controls.php:139
+msgid "Preview Height (%)"
+msgstr ""
+
+#: includes/class-controls.php:159
+msgid "Initially Expanded"
+msgstr ""
+
+#: includes/class-controls.php:165
+msgid "Leave as \"No\" to start in collapsed / shortened state."
+msgstr ""
+
+#: includes/class-controls.php:175
+msgid "Auto-Hide if Short"
+msgstr ""
+
+#: includes/class-controls.php:181
+msgid "Automatically hides the toggle button and gradient if full content naturally fits within the collapsed height."
+msgstr ""
+
+#: includes/class-controls.php:192
+msgid "Animation & Physics"
+msgstr ""
+
+#: includes/class-controls.php:204
+msgid "Animation Effect"
+msgstr ""
+
+#: includes/class-controls.php:207
+msgid "Smooth Accordion Slide"
+msgstr ""
+
+#: includes/class-controls.php:208
+msgid "Slide + Content Fade"
+msgstr ""
+
+#: includes/class-controls.php:209
+msgid "Elastic Spring Effect"
+msgstr ""
+
+#: includes/class-controls.php:210
+msgid "Instant (No Animation)"
+msgstr ""
+
+#: includes/class-controls.php:222
+msgid "Animation Speed"
+msgstr ""
+
+#: includes/class-controls.php:225
+msgid "Smooth (450ms)"
+msgstr ""
+
+#: includes/class-controls.php:226
+msgid "Fast (250ms)"
+msgstr ""
+
+#: includes/class-controls.php:227
+msgid "Slow & Gentle (800ms)"
+msgstr ""
+
+#: includes/class-controls.php:228
+msgid "Custom Duration"
+msgstr ""
+
+#: includes/class-controls.php:241
+msgid "Custom Duration (ms)"
+msgstr ""
+
+#: includes/class-controls.php:258
+msgid "Easing Curve"
+msgstr ""
+
+#: includes/class-controls.php:261
+msgid "Smooth Elastic (Cubic)"
+msgstr ""
+
+#: includes/class-controls.php:262
+msgid "Ultra Smooth (Expo Out)"
+msgstr ""
+
+#: includes/class-controls.php:263
+msgid "Ease In-Out"
+msgstr ""
+
+#: includes/class-controls.php:264
+msgid "Ease Out"
+msgstr ""
+
+#: includes/class-controls.php:265
+msgid "Linear"
+msgstr ""
+
+#: includes/class-controls.php:280
+msgid "Toggle Button"
+msgstr ""
+
+#: includes/class-controls.php:291
+msgid "Show Button"
+msgstr ""
+
+#: includes/class-controls.php:307
+msgid "Button Type / Layout"
+msgstr ""
+
+#: includes/class-controls.php:310
+msgid "Text & Icon Button"
+msgstr ""
+
+#: includes/class-controls.php:311
+msgid "Pill / Rounded Button"
+msgstr ""
+
+#: includes/class-controls.php:312
+msgid "Floating Circle / Square Icon"
+msgstr ""
+
+#: includes/class-controls.php:325
+msgid "Button Placement"
+msgstr ""
+
+#: includes/class-controls.php:328
+msgid "Below Content (Standard)"
+msgstr ""
+
+#: includes/class-controls.php:329
+msgid "Overlap Bottom Edge (Floating on Fade / Image)"
+msgstr ""
+
+#: includes/class-controls.php:342
+#: includes/class-controls.php:344
+#: includes/class-renderer.php:121
+msgid "Read More"
+msgstr ""
+
+#: includes/class-controls.php:343
+msgid "Expand Button Text"
+msgstr ""
+
+#: includes/class-controls.php:358
+msgid "Collapse Button Text"
+msgstr ""
+
+#: includes/class-controls.php:359
+#: includes/class-controls.php:361
+#: includes/class-renderer.php:122
+msgid "Read Less"
+msgstr ""
+
+#: includes/class-controls.php:374
+msgid "Include Icons"
+msgstr ""
+
+#: includes/class-controls.php:389
+msgid "Expand Icon"
+msgstr ""
+
+#: includes/class-controls.php:403
+msgid "Collapse Icon"
+msgstr ""
+
+#: includes/class-controls.php:418
+msgid "Smooth Icon Rotation (180°)"
+msgstr ""
+
+#: includes/class-controls.php:424
+msgid "Smoothly animates the icon upside down on expand/collapse."
+msgstr ""
+
+#: includes/class-controls.php:435
+msgid "Icon Position"
+msgstr ""
+
+#: includes/class-controls.php:438
+msgid "Before Text"
+msgstr ""
+
+#: includes/class-controls.php:442
+msgid "After Text"
+msgstr ""
+
+#: includes/class-controls.php:458
+msgid "Icon Gap"
+msgstr ""
+
+#: includes/class-controls.php:475
+msgid "Button Alignment"
+msgstr ""
+
+#: includes/class-controls.php:478
+msgid "Left"
+msgstr ""
+
+#: includes/class-controls.php:482
+msgid "Center"
+msgstr ""
+
+#: includes/class-controls.php:486
+msgid "Right"
+msgstr ""
+
+#: includes/class-controls.php:490
+msgid "Full Width"
+msgstr ""
+
+#: includes/class-controls.php:507
+msgid "Advanced Behaviors"
+msgstr ""
+
+#: includes/class-controls.php:518
+msgid "Scroll to Top on Collapse"
+msgstr ""
+
+#: includes/class-controls.php:524
+msgid "Smoothly scroll viewport back to element top when collapsed."
+msgstr ""
+
+#: includes/class-controls.php:534
+msgid "Scroll Offset (px)"
+msgstr ""
+
+#: includes/class-controls.php:540
+msgid "Adjust for sticky headers or admin bar (e.g. -60px)."
+msgstr ""
+
+#: includes/class-controls.php:550
+msgid "Accordion Group Name"
+msgstr ""
+
+#: includes/class-controls.php:553
+msgid "Give multiple folded elements the same group name to automatically collapse others when one expands."
+msgstr ""
+
+#: includes/class-controls.php:563
+msgid "Remember State Across Reloads"
+msgstr ""
+
+#: includes/class-controls.php:569
+msgid "Saves user expand/collapse preference in browser localStorage."
+msgstr ""
+
+#: includes/class-controls.php:579
+msgid "Disable on Desktop"
+msgstr ""
+
+#: includes/class-controls.php:594
+msgid "Disable on Tablet"
+msgstr ""
+
+#: includes/class-controls.php:609
+msgid "Disable on Mobile"
+msgstr ""
+
+#: includes/class-controls.php:632
+msgid "Unfold: Dynamic Overlay"
+msgstr ""
+
+#: includes/class-controls.php:643
+msgid "Enable Overlay"
+msgstr ""
+
+#: includes/class-controls.php:655
+msgid "Overlay Style"
+msgstr ""
+
+#: includes/class-controls.php:658
+msgid "Classic Bottom Gradient"
+msgstr ""
+
+#: includes/class-controls.php:659
+msgid "Frosted Glass (Blur & Gradient)"
+msgstr ""
+
+#: includes/class-controls.php:660
+msgid "Dark Card Shadow / Vignette"
+msgstr ""
+
+#: includes/class-controls.php:661
+msgid "Custom Background Stops"
+msgstr ""
+
+#: includes/class-controls.php:673
+msgid "Overlay Height"
+msgstr ""
+
+#: includes/class-controls.php:695
+msgid "Overlay Base Color"
+msgstr ""
+
+#: includes/class-controls.php:711
+msgid "Custom Overlay Background"
+msgstr ""
+
+#: includes/class-controls.php:731
+msgid "Unfold: Button Style"
+msgstr ""
+
+#: includes/class-controls.php:743
+msgid "Typography"
+msgstr ""
+
+#: includes/class-controls.php:757
+msgid "Normal"
+msgstr ""
+
+#: includes/class-controls.php:764
+#: includes/class-controls.php:798
+msgid "Text & Icon Color"
+msgstr ""
+
+#: includes/class-controls.php:778
+#: includes/class-controls.php:812
+msgid "Background"
+msgstr ""
+
+#: includes/class-controls.php:787
+msgid "Border"
+msgstr ""
+
+#: includes/class-controls.php:795
+#: includes/class-controls.php:830
+msgid "Box Shadow"
+msgstr ""
+
+#: includes/class-controls.php:805
+msgid "Hover"
+msgstr ""
+
+#: includes/class-controls.php:820
+msgid "Border Color"
+msgstr ""
+
+#: includes/class-controls.php:844
+msgid "Border Radius"
+msgstr ""
+
+#: includes/class-controls.php:856
+msgid "Padding"
+msgstr ""
+
+#: includes/class-controls.php:875
+msgid "Button Width / Size (for Icon/Pill)"
+msgstr ""
+
+#: includes/class-controls.php:889
+msgid "Button Wrapper Margin / Offset"
+msgstr ""
+
+#: includes/class-controls.php:909
+msgid "Icon Size"
+msgstr ""

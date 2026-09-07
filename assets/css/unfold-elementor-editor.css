@@ -1,0 +1,15 @@
+/**
+ * Unfold for Elementor - Editor & Admin Styles
+ *
+ * @package Dynime\UnfoldElementor
+ */
+
+.elementor-control-section_unfold_elementor .elementor-panel-heading-title:before,
+.elementor-control-section_unfold_elementor_overlay .elementor-panel-heading-title:before,
+.elementor-control-section_unfold_elementor_button_style .elementor-panel-heading-title:before {
+  content: "\e90b";
+  font-family: eicons;
+  margin-right: 6px;
+  font-size: 14px;
+  color: #2563eb;
+}

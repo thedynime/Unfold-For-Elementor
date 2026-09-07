@@ -1,0 +1,293 @@
+/**
+ * Unfold for Elementor - Frontend Styles
+ *
+ * @package Dynime\UnfoldElementor
+ */
+
+/* ==========================================================================
+   Base Unfold Wrapper & Inner Content
+   ========================================================================== */
+.unfold-elementor-container.unfold-elementor--active {
+  position: relative !important;
+  box-sizing: border-box;
+}
+
+.unfold-elementor-container.unfold-elementor--active > .unfold-elementor__inner,
+.unfold-elementor-container.unfold-elementor--active > .e-con-inner,
+.unfold-elementor-container.unfold-elementor--active > .elementor-container,
+.unfold-elementor-container.unfold-elementor--active > .elementor-widget-container,
+.unfold-elementor-container.unfold-elementor--active > .elementor-widget-wrap {
+  position: relative;
+  box-sizing: border-box;
+  will-change: max-height, opacity, transform;
+  transition: max-height 0.45s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.35s ease;
+}
+
+/* Collapsed State */
+.unfold-elementor-container.unfold-elementor--collapsed > .unfold-elementor__inner,
+.unfold-elementor-container.unfold-elementor--collapsed > .e-con-inner,
+.unfold-elementor-container.unfold-elementor--collapsed > .elementor-container,
+.unfold-elementor-container.unfold-elementor--collapsed > .elementor-widget-container,
+.unfold-elementor-container.unfold-elementor--collapsed > .elementor-widget-wrap {
+  max-height: var(--unfold-elementor-collapsed-height, 160px) !important;
+  overflow: hidden !important;
+}
+
+/* Full Hide 0px Collapsed State */
+.unfold-elementor-container.unfold-elementor--collapsed.unfold-elementor--zero-height > .unfold-elementor__inner,
+.unfold-elementor-container.unfold-elementor--collapsed.unfold-elementor--zero-height > .e-con-inner,
+.unfold-elementor-container.unfold-elementor--collapsed.unfold-elementor--zero-height > .elementor-container,
+.unfold-elementor-container.unfold-elementor--collapsed.unfold-elementor--zero-height > .elementor-widget-container,
+.unfold-elementor-container.unfold-elementor--collapsed.unfold-elementor--zero-height > .elementor-widget-wrap {
+  max-height: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border-top-width: 0px !important;
+  border-bottom-width: 0px !important;
+  overflow: hidden !important;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Expanded State */
+.unfold-elementor-container.unfold-elementor--expanded > .unfold-elementor__inner,
+.unfold-elementor-container.unfold-elementor--expanded > .e-con-inner,
+.unfold-elementor-container.unfold-elementor--expanded > .elementor-container,
+.unfold-elementor-container.unfold-elementor--expanded > .elementor-widget-container,
+.unfold-elementor-container.unfold-elementor--expanded > .elementor-widget-wrap {
+  max-height: none !important;
+  overflow: visible !important;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.unfold-elementor-container.unfold-elementor--animating > .unfold-elementor__inner,
+.unfold-elementor-container.unfold-elementor--animating > .e-con-inner,
+.unfold-elementor-container.unfold-elementor--animating > .elementor-container,
+.unfold-elementor-container.unfold-elementor--animating > .elementor-widget-container,
+.unfold-elementor-container.unfold-elementor--animating > .elementor-widget-wrap {
+  overflow: hidden !important;
+}
+
+/* ==========================================================================
+   Dynamic Overlays (Classic, Frosted Glass, Card Dark)
+   ========================================================================== */
+.unfold-elementor__fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+  z-index: 8;
+}
+
+.unfold-elementor__fade--classic {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.unfold-elementor__fade--frosted {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.92) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.unfold-elementor__fade--card_dark {
+  background: linear-gradient(to bottom, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.95) 100%);
+}
+
+.unfold-elementor-container.unfold-elementor--expanded .unfold-elementor__fade,
+.unfold-elementor-container.unfold-elementor--zero-height .unfold-elementor__fade {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* ==========================================================================
+   Toggle Button & Wrapper Layouts
+   ========================================================================== */
+.unfold-elementor__button-wrapper {
+  position: relative;
+  z-index: 10;
+  margin-top: 14px;
+  box-sizing: border-box;
+  clear: both;
+}
+
+/* Overlapping / Floating placement over bottom edge */
+.unfold-elementor--btn-pos-overlap .unfold-elementor__button-wrapper {
+  margin-top: 0 !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(50%);
+  z-index: 20;
+}
+
+.unfold-elementor-align-left,
+.unfold-elementor__button-wrapper.unfold-elementor-align-left {
+  text-align: left;
+}
+
+.unfold-elementor-align-center,
+.unfold-elementor__button-wrapper.unfold-elementor-align-center {
+  text-align: center;
+}
+
+.unfold-elementor-align-right,
+.unfold-elementor__button-wrapper.unfold-elementor-align-right {
+  text-align: right;
+}
+
+.unfold-elementor-align-justify .unfold-elementor__button,
+.unfold-elementor__button-wrapper.unfold-elementor-align-justify .unfold-elementor__button {
+  width: 100% !important;
+  justify-content: center !important;
+}
+
+/* Button Base */
+.unfold-elementor__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #1e293b;
+  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  user-select: none;
+  outline: none;
+  pointer-events: auto;
+  position: relative;
+}
+
+.unfold-elementor__button:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.12);
+}
+
+.unfold-elementor__button:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+.unfold-elementor__button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Pill Button Style */
+.unfold-elementor__button--pill {
+  border-radius: 9999px !important;
+  padding: 10px 24px !important;
+}
+
+/* Floating Icon Only Button Style */
+.unfold-elementor__button--icon_only {
+  width: 44px;
+  height: 44px;
+  padding: 0 !important;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.35);
+}
+
+.unfold-elementor__button--icon_only:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.45);
+}
+
+/* Icons & Smooth 180deg Rotation */
+.unfold-elementor__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.unfold-elementor__icon svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  transition: fill 0.25s ease;
+}
+
+/* Icon Rotation Mode */
+.unfold-elementor--icon-rotate .unfold-elementor-container.unfold-elementor--expanded .unfold-elementor__icon {
+  transform: rotate(180deg);
+}
+
+/* ==========================================================================
+   Responsive Disabling
+   ========================================================================== */
+@media (min-width: 1025px) {
+  .unfold-elementor-container.unfold-elementor--disabled-desktop > .unfold-elementor__inner,
+  .unfold-elementor-container.unfold-elementor--disabled-desktop > .e-con-inner,
+  .unfold-elementor-container.unfold-elementor--disabled-desktop > .elementor-container,
+  .unfold-elementor-container.unfold-elementor--disabled-desktop > .elementor-widget-container,
+  .unfold-elementor-container.unfold-elementor--disabled-desktop > .elementor-widget-wrap {
+    max-height: none !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+  }
+  .unfold-elementor-container.unfold-elementor--disabled-desktop > .unfold-elementor__fade,
+  .unfold-elementor-container.unfold-elementor--disabled-desktop > .unfold-elementor__button-wrapper {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .unfold-elementor-container.unfold-elementor--disabled-tablet > .unfold-elementor__inner,
+  .unfold-elementor-container.unfold-elementor--disabled-tablet > .e-con-inner,
+  .unfold-elementor-container.unfold-elementor--disabled-tablet > .elementor-container,
+  .unfold-elementor-container.unfold-elementor--disabled-tablet > .elementor-widget-container,
+  .unfold-elementor-container.unfold-elementor--disabled-tablet > .elementor-widget-wrap {
+    max-height: none !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+  }
+  .unfold-elementor-container.unfold-elementor--disabled-tablet > .unfold-elementor__fade,
+  .unfold-elementor-container.unfold-elementor--disabled-tablet > .unfold-elementor__button-wrapper {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .unfold-elementor-container.unfold-elementor--disabled-mobile > .unfold-elementor__inner,
+  .unfold-elementor-container.unfold-elementor--disabled-mobile > .e-con-inner,
+  .unfold-elementor-container.unfold-elementor--disabled-mobile > .elementor-container,
+  .unfold-elementor-container.unfold-elementor--disabled-mobile > .elementor-widget-container,
+  .unfold-elementor-container.unfold-elementor--disabled-mobile > .elementor-widget-wrap {
+    max-height: none !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+  }
+  .unfold-elementor-container.unfold-elementor--disabled-mobile > .unfold-elementor__fade,
+  .unfold-elementor-container.unfold-elementor--disabled-mobile > .unfold-elementor__button-wrapper {
+    display: none !important;
+  }
+}
