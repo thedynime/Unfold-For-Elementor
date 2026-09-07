@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A flexible Show More and Show Less solution for Elementor that lets you make widgets, containers, sections, and nested content expandable and collapsible directly from the Advanced tab.
+A flexible Show More and Show Less solution for Elementor. Make widgets, containers, and sections expandable and collapsible from the Advanced tab.
 
 == Description ==
 
